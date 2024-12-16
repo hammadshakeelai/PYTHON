@@ -1,2 +1,2 @@
-# PYTHON
-Python practise repository (questions and solutions)
+# PYTHON BASICS
+Python Practise Repository 
