@@ -13,3 +13,4 @@ def factorial(n):
         return factorial(n-1)+factorial(n-2)
 if __name__=='__main__':
 	main()
+#slow as fuck
