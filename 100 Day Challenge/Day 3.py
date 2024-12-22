@@ -1,28 +1,30 @@
 #Objective: Learn to store input in to variable,understand string concatenation and variable assignment
-name = input("what is your name?")
-print(name)
+p=4
+if 2>p:
+    name = input("what is your name? ")
+    print(name)
+    print()
+    name="shaheen afridi "
+    print(name)
+    print()
+    name ="jack"
+    print(name)
+    print()
+    name=input("what is your name? ")
+    length=len(name)
+    print(length)
 
-name="aleena"
-print(name)
+    a=input('a? ')
+    b=input('b? ')
 
-name ="jack"
-print(name)
-
-name=input("what is your name")
-length=len(name)
-print(length)
-
-a=input()
-b=input()
-
-c=a
-a=b
-b=c
-print ("a: " + a)
-print("b: " + b)
-
+    c=a
+    a=b
+    b=c
+    print ("a: " + a)
+    print("b: " + b)
+    print()
 print("welcome to the band name geneator:")
 city=input("in which city you were born?\n")
 pet=input("what is your pet name?\n")
-band_name=city + " " + pet
+band_name="x"+city[1:] + " " + pet
 print("your band name can be: " + band_name)

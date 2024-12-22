@@ -2,6 +2,10 @@
 
 #to print a single word through index numbers.
 print("hello"[4])
+print("hello"[::2])
+print("hello"[:3])
+print("hello"[1:3])
+print("hello"[::-1])
 
 #data types
 #integer: numbers.
