@@ -14,4 +14,14 @@ def using_randint():
 def using_choice():
     posiblities_list=['heads','tails']
     print(random.choice(posiblities_list))
-using_choice()
+# using_choice()
+
+def my_new_design():
+    
+    number = random.randint(0,1)
+    if number:
+        print('Heads')
+    else:
+        print("Tails")
+        
+my_new_design()
