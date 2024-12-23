@@ -18,3 +18,4 @@ if __name__=='__main__':
 	main()
 #fast as fuck
 #maximum recursion depth is 999 idk why
+# dynamic programming = recursion + meoization

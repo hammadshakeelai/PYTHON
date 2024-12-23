@@ -1,4 +1,4 @@
-#Objective: make a project game
+#Objective: make a project
 #
 #
 # 
@@ -6,8 +6,10 @@
 # 
 def total_price(quantity, price):
     return quantity * price
+
 def final_price(discounted_price):
     return round((discounted_price + tax_onit(discounted_price)), 2)
+
 def tax_onit(discounted_price):
     TAX_RATE = 8.5
     return round((TAX_RATE * discounted_price / 100), 2)
@@ -24,6 +26,7 @@ def discounted_price(tot_price):
     else:
         discount = 0
     return tot_price - (discount*tot_price/100)
+
 def display_items(girls_shampoo,boys_shampoo,cows_shampoo):
     print("\n SHAMPOO MARKET PLACE")
     print("___________________________________________\n")
@@ -32,9 +35,6 @@ def display_items(girls_shampoo,boys_shampoo,cows_shampoo):
     print(" code:2 product name:boys shampoo : 29.33$ : In stock ", boys_shampoo)
     print(" code:3 product name:cows shampoo : 1.99$ : In stock ", cows_shampoo)
     print("\n")
-
-
-
 
 def input1():
     tota = 0
