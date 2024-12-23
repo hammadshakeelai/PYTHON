@@ -25,3 +25,20 @@ else:
     import random
     person_paying=random.choice(names_of_people)
     print(f'The person to get their wallet empty is.....{person_paying}')
+    
+####################################################################
+#extra
+
+my_list = [ "me" , "you" , "he" , "him" ]
+
+my_list.append( "her" )    #use append to an a new item to the end of the string
+
+my_list.extend( [ "his" , "she" , "mine" ] )     #use extend to extend the list with item from this list in extends input parameter
+print( my_list )
+
+my_new_list=  [ 'yes' , 'dop' , 'skibidi' ]
+strange_list = [ my_list , my_new_list ]
+print( strange_list )
+
+#list.index("text object whose index you want")
+my_list.index("me")
