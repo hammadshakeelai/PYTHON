@@ -1,5 +1,4 @@
 # creating vahicle Class
-
 class Vehicle:
     
     def __init__(self, name, max_speed, mileage, fuel):
@@ -7,7 +6,7 @@ class Vehicle:
         self.max_speed = max_speed
         self.mileage = mileage 
         self.fuel = fuel
-    # geting speed of the vehicle
+        
     def get_speed(self):
         print("The maximum speed is {} km/h".format(self.max_speed))
     
@@ -30,7 +29,7 @@ def main():
     # bus1.get_mileage()
     # bus1.get_speed()
     
-    bus1 = Bus("mercedes", 380, 3,'HIGH OCTANE')
+    car1 = Vehicle("mercedes", 380, 3,'HIGH OCTANE')
     bus1.get_name( )
     bus1.get_mileage()
     bus1.get_speed()
