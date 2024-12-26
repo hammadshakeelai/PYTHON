@@ -1,7 +1,7 @@
 # creating vahicle Class
 class Vehicle:
     
-    def __init__(self, name, max_speed, mileage, fuel):
+    def __init__(self, name: str, max_speed: int, mileage:float, fuel:str):
         self.name = name
         self.max_speed = max_speed
         self.mileage = mileage 
@@ -19,7 +19,9 @@ class Vehicle:
 # this class inherits all the methods from the Vehicle class     
 class Bus(Vehicle):
     pass   
-   
+class Car(Vehicle):
+    pass
+
 def main():
     # bus1 = Bus("BRT", 80, 23,'deisel')
     
@@ -30,8 +32,8 @@ def main():
     # bus1.get_speed()
     
     car1 = Vehicle("mercedes", 380, 3,'HIGH OCTANE')
-    bus1.get_name( )
-    bus1.get_mileage()
-    bus1.get_speed()
+    car1.get_name( )
+    car1.get_mileage()
+    car1.get_speed()
     
 main()     

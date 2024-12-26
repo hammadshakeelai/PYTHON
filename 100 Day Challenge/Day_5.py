@@ -46,3 +46,8 @@ final_amount="{:.2f}".format(bill_per_person)####||   "{:.2f}".format(  number  
 #################################################||
 
 print(f"Every Person Should Pay: ${final_amount}")
+
+
+name = "hammad"
+age = 24
+print("My name is {} and I am {} years old.".format(name,age))
