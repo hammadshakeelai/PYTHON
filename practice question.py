@@ -1,6 +1,6 @@
 #Assignment 
-# O(5n) time complexity
-# O(2n) memory
+# O(n) time complexity
+# O(n) memory complexity
 # 1.	Consider you are a junior developer in IMSCIENCES [ERP]. You are given a task to create a program for [counting students' marks]. The program should ask for the [number of students in a class]. Then, it should assign random marks to each student: from 5 to 30 for the mid-term and from 5 to 50 for the final term. Next, the program should calculate the total marks of each student and[ display their final marks.]
 # Furthermore, group the students based on their total marks as follows:
 # o	Group 1: Marks from 5 to 10
