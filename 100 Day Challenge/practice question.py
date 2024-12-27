@@ -11,68 +11,127 @@
 # Finally, print the number of asterisks (*) equal to the number of students in each group, with each group printed on a separate line. If a group has no students, print an empty line for that group.
 # Output Example:
 # If Group 1 has 5 students, Group 2 has 3 students, and Group 3 has 8 students, the output should be:
+#####################################################################
+#####################################################################
+#####################################################################
+#####################################################################
+#####################################################################
 import random
 
 num_of_std  = int( input( "Enter number of students:  " ) )
 std_num_list = [ ]
+method = 2
 
-for _ in range( num_of_std ):
-    
-    std_num_mids = random.randint( 5 , 30 )
-    std_num_finals = random.randint(5 , 50 )
-    
-    std_total = std_num_finals + std_num_mids
-    # print(f"Total Marks: {std_total}")
-    std_num_list.insert( _ , std_total )
-    
-nums_5_10 = []
-nums_11_20 = []
-nums_21_30 = []
-nums_31_40 = []
-nums_41_50 = []
-nums_51_60 = []
-nums_61_70 = []
-nums_71_80 = []
+if method == 1 :
+        for _ in range( num_of_std ):
+        
+                std_num_mids = random.randint( 5 , 30 )
+                std_num_finals = random.randint(5 , 50 )
+                
+                std_total = std_num_finals + std_num_mids
+                # print(f"Total Marks: {std_total}")
+                std_num_list.insert( _ , std_total )
+        
+        nums_5_10 = []
+        nums_11_20 = []
+        nums_21_30 = []
+        nums_31_40 = []
+        nums_41_50 = []
+        nums_51_60 = []
+        nums_61_70 = []
+        nums_71_80 = []
 
 
-for num in std_num_list:
-    if num > 40 :
-            if num > 60 : 
-                    if num > 70 :                
-                            nums_71_80.append(num)                
-                    else:
-                            nums_61_70.append(num)     
-            else:
-                    if num > 50 :
-                            nums_51_60.append(num)
-                    else:
-                            nums_41_50.append(num)
-    else:    
-            if num > 20 :
-                    if num > 30:   
-                            nums_31_40.append(num)  
-                    else:
-                            nums_21_30.append(num)
-            else:
-                    if num > 10 :
-                            nums_11_20.append(num)
-                    else:
-                            nums_5_10.append(num)
+        for num in std_num_list:
+                if num > 40 :
+                        if num > 60 : 
+                                if num > 70 :                
+                                        nums_71_80.append(num)                
+                                else:
+                                        nums_61_70.append(num)     
+                        else:
+                                if num > 50 :
+                                        nums_51_60.append(num)
+                                else:
+                                        nums_41_50.append(num)
+                else:    
+                        if num > 20 :
+                                if num > 30:   
+                                        nums_31_40.append(num)  
+                                else:
+                                        nums_21_30.append(num)
+                        else:
+                                if num > 10 :
+                                        nums_11_20.append(num)
+                                else:
+                                        nums_5_10.append(num)
 
-#asteric ka mazak
-print(' o	Group 1: Marks from 5 to 10\n',len(nums_5_10)*"*")
-# print(nums_5_10)
-print(' o	Group 2: Marks from 11 to 20\n',len(nums_11_20)*"*")
-# print(nums_11_20)
-print(' o	Group 3: Marks from 21 to 30\n',len(nums_21_30)*"*")
-# print(nums_21_30)
-print(' o	Group 8: Marks from 31 to 40\n',len(nums_31_40)*"*")
-# print(nums_31_40)
-print(' o	Group 8: Marks from 41 to 50\n',len(nums_41_50)*"*")
-# print(nums_41_50)
-print(' o	Group 8: Marks from 51 to 60\n',len(nums_51_60)*"*")
-# print(nums_51_60)
-print(' o	Group 8: Marks from 61 to 70\n',len(nums_61_70)*"*")
-# print(nums_61_70)
-print(' o	Group 8: Marks from 71 to 80\n',len(nums_71_80)*"*")
-# print(nums_71_80)
+        #asteric ka mazak
+        print(' o	Group 1: Marks from 5 to 10\n',len(nums_5_10)*"*")
+        # print(nums_5_10)
+        print(' o	Group 2: Marks from 11 to 20\n',len(nums_11_20)*"*")
+        # print(nums_11_20)
+        print(' o	Group 3: Marks from 21 to 30\n',len(nums_21_30)*"*")
+        # print(nums_21_30)
+        print(' o	Group 8: Marks from 31 to 40\n',len(nums_31_40)*"*")
+        # print(nums_31_40)
+        print(' o	Group 8: Marks from 41 to 50\n',len(nums_41_50)*"*")
+        # print(nums_41_50)
+        print(' o	Group 8: Marks from 51 to 60\n',len(nums_51_60)*"*")
+        # print(nums_51_60)
+        print(' o	Group 8: Marks from 61 to 70\n',len(nums_61_70)*"*")
+        # print(nums_61_70)
+        print(' o	Group 8: Marks from 71 to 80\n',len(nums_71_80)*"*")
+        # print(nums_71_80)
+        
+##########################################################
+##########################################################
+##########################################################
+elif method == 2 :
+        Mark5_10=0
+        Mark11_20=0
+        Mark21_30=0
+        Mark31_40=0
+        Mark41_50=0
+        Mark51_60=0
+        Mark61_70=0
+        Mark71_80=0
+        for _ in range( num_of_std ):
+        
+                std_num_mids = random.randint( 5 , 30 )
+                std_num_finals = random.randint(5 , 50 )
+                
+                std_total = std_num_finals + std_num_mids
+                
+                
+                if std_total > 40 :
+                        if std_total > 60 : 
+                                if std_total > 70 :                
+                                        Mark71_80 += 1
+                                else:
+                                        Mark61_70  += 1  
+                        else:
+                                if std_total > 50 :
+                                        Mark51_60 += 1
+                                else:
+                                        Mark41_50 += 1
+                else:    
+                        if std_total > 20 :
+                                if std_total > 30:   
+                                        Mark31_40 += 1
+                                else:
+                                        Mark21_30 += 1
+                        else:
+                                if std_total > 10 :
+                                        Mark11_20 += 1
+                                else:
+                                        Mark5_10 += 1
+        print(' o	Group 1: Marks from 5 to 10\n',(Mark5_10)*"*")
+        print(' o	Group 2: Marks from 11 to 20\n',(Mark11_20)*"*")
+        print(' o	Group 3: Marks from 21 to 30\n',(Mark21_30)*"*")
+        print(' o	Group 4: Marks from 31 to 40\n',(Mark31_40)*"*")
+        print(' o	Group 5: Marks from 41 to 50\n',(Mark41_50)*"*")
+        print(' o	Group 6: Marks from 51 to 60\n',(Mark51_60)*"*")
+        print(' o	Group 7: Marks from 61 to 70\n',(Mark61_70)*"*")
+        print(' o	Group 8: Marks from 71 to 80\n',(Mark71_80)*"*")
+        
