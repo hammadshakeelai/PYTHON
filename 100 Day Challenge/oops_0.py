@@ -1,7 +1,11 @@
+# class == constuctor
 #         self == this == instance == s
 #          ^
 #       convention
 ########################################################################################
+# a function inside a class is called method
+# attributes are the variables with self. prefix
+# objects are variables assigned to class
 ########################################################################################
 # CLASSES
 ########################################################################################
