@@ -1,5 +1,5 @@
 #O(m*k)
-# def minimum_coins(my_coins_list: list , target_amount: int):
+# def minimum_coins(my_coins_list, target_amount):
 #     if target_amount==0:
 #         answer = 0
 #     else:
@@ -8,17 +8,12 @@
 #             remainder = target_amount - coin
 #             if remainder < 0:
 #                 continue
-#             answer = min_ignore_none(answer,minimum_coins(remainder,my_coins_list)+1)
+#             answer = min_ignore_none(answer,minimum_coins(my_coins_list,remainder)+1)
 #     return answer
-# def min_ignore_none(a,b):
-#     if a is None:
-#         return b
-#     if b is None:
-#         return a
-#     return min(a,b)
+
 #########################################################
-# memo={}
-# def minimum_coins(my_coins_list: list , target_amount: int):
+
+# def minimum_coins(my_coins_list: list , target_amount: int,memo={}):
 #     if target_amount in memo:
 #         return memo[target_amount]
 #     if target_amount==0:
@@ -29,19 +24,14 @@
 #             remainder = target_amount - coin
 #             if remainder < 0:
 #                 continue
-#             answer = min_ignore_none(answer,minimum_coins(remainder,my_coins_list)+1)
+#             answer = min_ignore_none(answer,minimum_coins(my_coins_list,remainder)+1)
 #     memo[target_amount] =answer
 #     return answer
-# def min_ignore_none(a,b):
-#     if a is None:
-#         return b
-#     if b is None:
-#         return a
-#     return min(a,b)
+
 ################################################################
 def minimum_coins(my_coins_list: list, target_value:int) -> int:
     memo = {}
-    memo[0] =0
+    memo[0] = 0
     for i in range(1,target_value+1):
         for coin in my_coins_list:
             remainder = i - coin 
@@ -55,3 +45,6 @@ def min_ignore_none(a,b):
     if b is None:
         return a
     return min(a,b)
+
+list1=[1,5,4]
+print(minimum_coins(list1,13))
