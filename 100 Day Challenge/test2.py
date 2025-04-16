@@ -82,7 +82,7 @@ root = Tk()
 root.title('Rock Paper Scissor')
 
 root.geometry('270x200')
-root.config(bg="light blue")
+root.config(bg="light grey")
 
 # text widget to display choices
 
